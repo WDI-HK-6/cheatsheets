@@ -1,8 +1,7 @@
 #JavaScript Cheatsheet
 
+**Variables**
 ```javascript
-
-// Variables-------------------------------
 
 // number
 var num1 = 5;
@@ -15,8 +14,9 @@ hasCar; //returns false
 // string
 var myName = 'Joe';
 myName; // returns 'Joe'
-
-// Arrays-----------------------------------
+```
+**Arrays**
+```javascript
 
 // array
 var names = ['Adam', 'Sam', 'Joe'];
@@ -37,7 +37,9 @@ names[1];
 // returns 'Joe' 
 names[2]; 
 
-// Functions--------------------------------
+```
+**Functions**
+```javascript
 
 // defining and storing the function into a variable:
 
@@ -50,8 +52,9 @@ var returnVolumeBox = function(length, width, height){
 // returns 40
 
 returnVolumeBox(4, 5, 2); 
-
-// Hash------------------------------------ {key:value} pairs
+```
+**Hash:  {key:value} pairs**
+```javascript
 var car = {
   brand: 'Honda',
   milesPerGallon: 30,
@@ -89,7 +92,9 @@ var car = {
   }
 };
 
-// Accessing Values----------------------------------- 
+```
+**Accessing, Editing, and Adding Values**
+```javascript
 
 // adds a new {key:value pair} :
 
@@ -147,9 +152,9 @@ car.remainingRange( litersToGallons(10) );
 
 // returns 1000
 returnVolumeBox(car.dimensions.length, car.dimensions.width, car.dimensions.height);
-
-// Loops ------------------------------------
-
+```
+**Loops**
+```javascript
 var names = ['Adam', 'Sam', 'Joe'];
 
 // console logs 
@@ -183,8 +188,9 @@ do {
   i++;
 } while (i < names.length);
 
-// Using loops in functions -----------------------
-
+```
+**Using loops in functions**
+```javascript
 var moreNames = ['Zack', 'Zoey', 'Zakeria'];
 var consoleArrayItems = function(array){
 	for(var i = 0; i < names.length; i++){
@@ -197,8 +203,9 @@ var consoleArrayItems = function(array){
 // 'Zakeria'
 consoleArrayItems(moreNames);
 
-// For-In Loops for Arrays ----------------------------------
-
+```
+**For-In Loops for Arrays**
+```javascript
 var moreNames = ['Zack', 'Zoey', 'Zakeria'];
 
 // console logs 
@@ -221,7 +228,9 @@ var consoleLogNames = function(array){
 // 'Zakeria'
 consoleLogNames(moreNames);
 
-// For-In Loops for Hashes ----------------------------------
+```
+**For-In Loops for Hashes**
+```javascript
 
 var car = {
   brand: 'Honda',
