@@ -28,6 +28,9 @@ names.length;
 // returns 'Adam'
 names[0]; 
 
+// changes 'Adam' to 'Billy'
+names[0] = Billy;
+
 // returns 'Sam'
 names[1];
 
@@ -88,9 +91,26 @@ var car = {
 
 // Accessing Values----------------------------------- 
 
+// adds a new {key:value pair} :
+
+car.color = 'black';
+
+// you cannot add keys without first creating the parent keys first:
+
+// doesn't work
+car.model.designation = 'RSX'; 
+
+// works
+car.model = {};
+car.model.designation = 'RSX';
+
 // returns 'Honda' in dot notation and square bracket notation
 car.brand;
 car['brand'];
+
+// changes 'Honda' to 'Ford'
+car.brand = 'Ford';
+car['brand'] = 'Ford';
 
 // returns 'DB22MG'
 car['license plate'];
