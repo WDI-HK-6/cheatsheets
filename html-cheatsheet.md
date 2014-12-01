@@ -1,4 +1,4 @@
-#HTML
+#HTML Cheatsheet
 
 HTML is never used solely for styling.
 
